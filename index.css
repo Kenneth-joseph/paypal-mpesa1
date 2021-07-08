@@ -33,3 +33,17 @@ button button #btn:hover{
     color: teal;
     background-color: thistle;
 }
+
+.table table{
+    /* display: none; */
+    border: 2px solid rgb(61, 87, 238);
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.table{
+    margin-top: 40px;
+    
+
+}
