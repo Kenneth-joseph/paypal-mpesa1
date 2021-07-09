@@ -34,16 +34,25 @@ button button #btn:hover{
     background-color: thistle;
 }
 
+.table table th{
+    letter-spacing: .2rem;
+}
 .table table{
     /* display: none; */
     border: 2px solid rgb(61, 87, 238);
-    width: 800px;
+    width: 100%;
+    border-collapse: collapse;
     margin: 0 auto;
-
+    font-weight: 500;
 }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
 
 .table{
     margin-top: 40px;
-    
-
+    padding: 5px;
 }
