@@ -10,7 +10,8 @@ $(document).ready(function(){
     $('button#btn').click(function(event){
         event.preventDefault();
     let amount=parseInt( document.getElementById('amount').value)
-    // document.getElementById("pay_k").innerHTML = paypill;
+    
+    $('.table table, #btn1').show()
 
 
      //mpesa
@@ -44,26 +45,12 @@ $(document).ready(function(){
     let pcommission = (paypal_commission*ibank)/100;
     paypal = pcommission+ibank; 
     paypal_usd =paypal/usd;
-    $("#fin_k").html(paypal);
-    $("#fin_u").html(paypal_usd);
+    $("#fin_k,#client_k ").html(paypal);
+    $("#fin_u,#client_u").html(paypal_usd);
+    })
 
-    // client paypal
-    // let pcommission = (paypal_commission*ibank)/100;
-    // paypal = pcommission+ibank; 
-    // paypal_usd =paypal/usd;
-    // $("#client_k").html(paypal);
-    // $("#client_u").html(paypal_usd);
-    // document.write(paypal_usd);
-
-    
-
-
-
-    
-
-
-    
-    // document.write(amount);  
-    // $('.table table').show();
+    $("#btn1").click(function(){
+        $('#form-transaction').trigger("reset");
+        $('.table table, #btn1').hide()
     })
  });

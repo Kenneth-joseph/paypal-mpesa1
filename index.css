@@ -38,14 +38,25 @@ button button #btn:hover{
     letter-spacing: .2rem;
 }
 .table table{
-    /* display: none; */
     border: 2px solid rgb(61, 87, 238);
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
     font-weight: 500;
 }
-
+.table table, #btn1{
+    display: none;  
+    
+}
+#btn1{
+    margin: 5px;
+    float: right;
+    background-color: rgb(207, 13, 13);
+    border: 1px solid rgb(207, 13, 13);
+    margin-top: 5px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
